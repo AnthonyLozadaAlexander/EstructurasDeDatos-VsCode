@@ -9,5 +9,5 @@ public interface Pila<T> {
 
     T cima();
 
-    int numDatos();
+    int getTamanio();
 }
