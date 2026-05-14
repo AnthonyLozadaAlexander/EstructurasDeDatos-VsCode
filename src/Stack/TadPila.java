@@ -12,6 +12,10 @@ public class TadPila<T> implements Pila<T> {
         this.nombre = nombre;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     public boolean estaVacia() {
         return nodoCima == null;
     }
