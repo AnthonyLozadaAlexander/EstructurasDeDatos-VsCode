@@ -20,8 +20,13 @@ public class TadPila<T> implements Pila<T> {
         return nodoCima == null;
     }
 
+    public void imprimirPila() {
+
+    }
+
     public void apilar(T dato) {
-        NodoPila<T> aux = new NodoPila<>(dato); // utilizamos un nodo aux para crear un nuevo nodo y poder asignar el dato
+        NodoPila<T> aux = new NodoPila<>(dato); // utilizamos un nodo aux para crear un nuevo nodo y poder asignar el
+                                                // dato
         aux.siguiente = nodoCima; // toma el puntero de la cima y lo asigna al nuevo nodo aux
         nodoCima = aux;
         tamanio++;
