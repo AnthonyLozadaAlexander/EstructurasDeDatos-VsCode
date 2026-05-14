@@ -21,15 +21,20 @@ public class TadPila<T> implements Pila<T> {
     }
 
     public void imprimirPila() {
+        boolean vacia = estaVacia();
         NodoPila<T> aux;
         aux = nodoCima;
         if (estaVacia()) {
             System.out.println("Error: Pila Vacia");
         }
 
-        while (!estaVacia()) {
+        while (!vacia) {
             System.out.println(aux.dato + " ");
             aux = aux.siguiente;
+            if (aux == null) {
+                vacia = true;
+            }
+
         }
         System.out.println();
     }
