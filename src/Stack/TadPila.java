@@ -43,4 +43,8 @@ public class TadPila<T> implements Pila<T> {
         return nodoCima.dato;
     }
 
+    public int numDatos() {
+        return tamanio;
+    }
+
 }
