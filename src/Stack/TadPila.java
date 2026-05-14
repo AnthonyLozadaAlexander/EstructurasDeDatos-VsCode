@@ -23,6 +23,10 @@ public class TadPila<T> implements Pila<T> {
     public void imprimirPila() {
         NodoPila<T> aux;
         aux = nodoCima;
+        if (estaVacia()) {
+            System.out.println("Error: Pila Vacia");
+        }
+
         while (!estaVacia()) {
             System.out.println(aux.dato + " ");
             aux = aux.siguiente;
@@ -31,7 +35,8 @@ public class TadPila<T> implements Pila<T> {
     }
 
     public void apilar(T dato) {
-        NodoPila<T> aux = new NodoPila<>(dato); // utilizamos un nodo aux para crear un nuevo nodo y poder asignar el dato al nuevo nodo                                                
+        NodoPila<T> aux = new NodoPila<>(dato); // utilizamos un nodo aux para crear un nuevo nodo y poder asignar el
+                                                // dato al nuevo nodo
         aux.siguiente = nodoCima; // toma el puntero de la cima y lo asigna al nuevo nodo aux
         nodoCima = aux;
         tamanio++;
