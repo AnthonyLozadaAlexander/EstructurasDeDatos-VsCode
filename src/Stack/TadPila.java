@@ -6,9 +6,10 @@ public class TadPila<T> implements Pila<T> {
     private int tamanio; // contador de elementos
     private String nombre; // nombre para la pila
 
-    public TadPila() {
+    public TadPila(String nombre) {
         this.nodoCima = null;
         this.tamanio = 0;
+        this.nombre = nombre;
     }
 
     public boolean estaVacia() {
