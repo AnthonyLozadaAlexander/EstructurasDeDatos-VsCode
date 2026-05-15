@@ -7,8 +7,8 @@ public class TadPila<T> implements Pila<T> {
     private String nombre; // nombre para la pila
 
     public TadPila(String nombre) {
-        this.nodoCima = null;
-        this.tamanio = 0;
+        this.nodoCima = null; // la pila inicia vacia
+        this.tamanio = 0; // su tamanio tambien inicia en 0
         this.nombre = nombre;
     }
 
