@@ -17,7 +17,7 @@ public class TadPila<T> implements Pila<T> {
     }
 
     public boolean estaVacia() {
-        return nodoCima == null;
+        return nodoCima == null; // true
     }
 
     public void imprimirPila() {
@@ -68,6 +68,29 @@ public class TadPila<T> implements Pila<T> {
 
     public int getTamanio() {
         return tamanio;
+    }
+
+    // guardar = A
+    //
+    // B
+    // C A
+    //
+    //
+
+    public void invertirPila() {
+
+        TadPila<T> pilaAux = new TadPila<>("Aux");
+        // pila auxiliar
+
+        // mientras la pila no este vacia
+        while (!this.estaVacia()) {
+            T guardar;
+            guardar = this.desapilar(); // desapilamos la pila original
+            pilaAux.apilar(guardar);
+        }
+
+        nodoCima = pilaAux.nodoCima;
+
     }
 
 }

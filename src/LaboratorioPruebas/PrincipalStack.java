@@ -15,6 +15,9 @@ public class PrincipalStack {
         pilaInteger.imprimirPila();
         numElem = pilaInteger.getTamanio();
         System.out.println("El tamanio de la pila es: [" + numElem + "] elementos");
+        pilaInteger.invertirPila();
+        System.out.println("Pila Invertida: ");
+        pilaInteger.imprimirPila();
 
     }
 
