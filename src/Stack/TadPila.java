@@ -86,4 +86,11 @@ public class TadPila<T> implements Pila<T> {
 
     }
 
+    @Override
+    public void vaciarPila() {
+        // desconectamos el puntero de la cima de los nodos de la pila
+        nodoCima = null;
+        tamanio = 0;
+    }
+
 }

@@ -10,4 +10,6 @@ public interface Pila<T> {
     T cima();
 
     int getTamanio();
+
+    void vaciarPila();
 }
