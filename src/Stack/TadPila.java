@@ -70,13 +70,6 @@ public class TadPila<T> implements Pila<T> {
         return tamanio;
     }
 
-    // guardar = A
-    //
-    // B
-    // C A
-    //
-    //
-
     public void invertirPila() {
 
         TadPila<T> pilaAux = new TadPila<>("Aux");
