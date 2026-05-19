@@ -5,8 +5,8 @@ public class NodoCola<T> {
     NodoCola<T> siguiente;
 
     NodoCola(T dato, NodoCola<T> siguiente) {
-        dato = dato;
-        siguiente = null;
+        this.dato = dato;
+        this.siguiente = null;
     }
 
 }
