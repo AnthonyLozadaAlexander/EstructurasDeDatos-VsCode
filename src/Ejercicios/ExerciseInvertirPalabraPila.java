@@ -14,6 +14,7 @@ public class ExerciseInvertirPalabraPila {
     public static String invertirPalabra(String palabra) {
         StringBuilder palabraInvertida = new StringBuilder();
         TadPila<Character> pila = new TadPila<>("Pila de Caracteres");
+
         for (int i = 0; i < palabra.length(); i++) {
             char letra = palabra.charAt(i); // recorre y almacena cada letra de la palabra
             pila.apilar(letra);
