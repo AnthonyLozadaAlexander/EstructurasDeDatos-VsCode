@@ -8,11 +8,11 @@ public class imprimirPila {
         TadPila<Integer> pila = new TadPila<>("Pila");
         pila.apilar(1);
         pila.apilar(2);
-        imprimirPila(pila);
+        imprimirPilaR(pila);
         
     }
 
-    public static <T> T imprimirPila(TadPila<T> pila){
+    public static <T> T imprimirPilaR(TadPila<T> pila){
         TadPila<T> aux;
         aux = pila;
         T elemento;
@@ -23,7 +23,7 @@ public class imprimirPila {
 
             elemento = aux.desapilar();
             System.out.print(elemento + " ");
-            return imprimirPila(aux);
+            return imprimirPilaR(aux);
         }
 
 
