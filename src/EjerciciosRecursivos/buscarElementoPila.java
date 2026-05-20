@@ -10,7 +10,7 @@ public class buscarElementoPila {
         pila.apilar(22);
         pila.apilar(100);
         pila.apilar(27);
-        encontrado = buscarElementoPilaR(pila, 100);
+        encontrado = buscarElementoPilaR(pila, 2);
         
         if(encontrado){
             System.out.println("El elemento si se encuentra en la Pila");
