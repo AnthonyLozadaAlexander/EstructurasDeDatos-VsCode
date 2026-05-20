@@ -6,8 +6,10 @@ public class imprimirPila {
     public static void main(String[] args) {
 
         TadPila<Integer> pila = new TadPila<>("Pila");
+        pila.apilar(5);
+        pila.apilar(3);
+        pila.apilar(8);
         pila.apilar(1);
-        pila.apilar(2);
         imprimirPilaR(pila);
         
     }
@@ -25,14 +27,6 @@ public class imprimirPila {
             System.out.print(elemento + " ");
             return imprimirPilaR(aux);
         }
-
-
-
-
-
-
-
-
     }
 
 }
